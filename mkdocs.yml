@@ -1,7 +1,5 @@
-site_name: test
-site_description: Тестовое - Описание новой функциональности
-site_url: http://localhost:8086
-dev_addr: 127.0.0.1:8086
+site_name: Описание новой функциональности
+site_description: Описание новой функциональности
 
 markdown_extensions:
   - markdown_grid_tables
@@ -77,8 +75,6 @@ plugins:
 
 theme:
     name: material
-    logo: logoOpt.svg
-    custom_dir: overrides
     font:
        text: Inter 
     language: ru

@@ -2,4 +2,4 @@
 uid: 'toc'
 title: 'Содержание'
 ---
-* [Начало](index.md)
+* [Тестик](index.md)
