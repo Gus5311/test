@@ -1,0 +1,113 @@
+site_name: test
+site_description: Тестовое - Описание новой функциональности
+site_url: http://localhost:8086
+dev_addr: 127.0.0.1:8086
+
+markdown_extensions:
+  - markdown_grid_tables
+  - def_list
+  - abbr
+  - pymdownx.magiclink # auto-link HTML, FTP, and email links https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+  - pymdownx.keys # add keys like ++ctrl+alt+delete++ # https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+  - pymdownx.details # add spoiler (??? note) https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - footnotes # https://python-markdown.github.io/extensions/footnotes/
+  - tables # https://python-markdown.github.io/extensions/tables/
+  - admonition # tips & notes (!!! note) https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - attr_list # https://python-markdown.github.io/extensions/attr_list/
+  - md_in_html
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tilde # https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+  - pymdownx.tasklist # https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+  - pymdownx.smartsymbols # https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
+  - pymdownx.mark # https://facelessuser.github.io/pymdown-extensions/extensions/mark/
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      options:
+        custom_icons:
+          - overrides/.icons
+  - toc:
+        permalink: true
+
+
+plugins:
+  - search
+  - autorefs
+  # - macros:
+  #     include_dir: docs/_templates
+  - autolinks
+  - ezglossary:
+      inline_refs: none
+      tooltip: full
+  # - section-index
+  - literate-nav:
+        nav_file: toc.md
+  - glightbox:
+      auto_caption: true
+  # - awesome-pages    
+  - tags
+  - offline
+
+
+theme:
+    name: material
+    logo: logoOpt.svg
+    custom_dir: overrides
+    font:
+       text: Inter 
+    language: ru
+    features:
+      - navigation.instant
+      - navigation.instant.progress
+      - content.code.copy
+      - content.tooltips
+      - content.tabs.link
+      - navigation.tracking
+      - navigation.sections
+      - navigation.top
+      - header.autohide
+      - search.share
+      - search.suggest
+      - search.highlight
+      - content.code.copy
+      - content.code.select
+
+copyright: Copyright &copy; 2025 team
+
+# nav:
+#   - test: toc.md
+
+extra_css:
+    - css/extra.css
+
+validation:
+  omitted_files: warn
+  absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
+  unrecognized_links: warn
+  anchors: warn  # New in MkDocs 1.6
