@@ -2,4 +2,6 @@
 uid: 'toc'
 title: 'Содержание'
 ---
-* [Тестик](index.md)
+* Release notes
+    * 2025
+        * [Версия 0.40](index.md)

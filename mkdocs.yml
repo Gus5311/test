@@ -1,6 +1,30 @@
 site_name: Описание новой функциональности
 site_description: Описание новой функциональности
 
+
+theme:
+    name: material
+    palette:
+    # Светлая тема (по умолчанию)
+    - scheme: default
+    font:
+       text: Inter 
+    language: ru
+    features:
+        - navigation.instant
+        - navigation.instant.progress
+        - content.tooltips
+        - content.tabs.link
+        - navigation.tracking
+        - navigation.sections
+        - navigation.top
+        - header.autohide
+        - search.share
+        - search.suggest
+        - search.highlight
+        - content.code.copy
+        - content.code.select
+
 markdown_extensions:
   - markdown_grid_tables
   - def_list
@@ -28,10 +52,6 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -72,27 +92,6 @@ plugins:
   - tags
   - offline
 
-
-theme:
-    name: material
-    font:
-       text: Inter 
-    language: ru
-    features:
-      - navigation.instant
-      - navigation.instant.progress
-      - content.code.copy
-      - content.tooltips
-      - content.tabs.link
-      - navigation.tracking
-      - navigation.sections
-      - navigation.top
-      - header.autohide
-      - search.share
-      - search.suggest
-      - search.highlight
-      - content.code.copy
-      - content.code.select
 
 copyright: Copyright &copy; 2025 team
 
